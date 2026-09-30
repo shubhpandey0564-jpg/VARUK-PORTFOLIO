@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VARUK — Creative Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    nav {
+      height: 75px;
+      padding: 0 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #111;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 78vh;
+      padding: 80px 7%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .small {
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 10vw, 90px);
+      line-height: .95;
+      max-width: 950px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      color: #666;
+      max-width: 560px;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      width: fit-content;
+      padding: 14px 24px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 90px 7%;
+    }
+
+    .title {
+      font-size: 42px;
+      margin-bottom: 35px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      min-height: 300px;
+      padding: 28px;
+      background: #f2f2f2;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .project h3 {
+      font-size: 26px;
+      margin-bottom: 5px;
+    }
+
+    .project p {
+      color: #666;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .service {
+      padding: 28px;
+      border: 1px solid #e8e8e8;
+      border-radius: 12px;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .contact {
+      margin: 40px 7%;
+      padding: 70px;
+      border-radius: 20px;
+      background: #111;
+      color: #fff;
+    }
+
+    .contact p {
+      color: #aaa;
+      margin: 12px 0 25px;
+    }
+
+    .contact .btn {
+      background: #fff;
+      color: #111;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+
+      nav {
+        padding: 0 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 70px 5%;
+      }
+
+      section {
+        padding: 65px 5%;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        margin: 20px 5%;
+        padding: 45px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">VARUK</div>
+
+    <div>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+
+    <div class="small">CREATIVE TEAM</div>
+
+    <h1>
+      We create work that gets noticed.
+    </h1>
+
+    <p>
+      Explore our creative work, projects and digital solutions.
+    </p>
+
+    <a href="#work" class="btn">
+      See our work & projects →
+    </a>
+
+  </section>
+
+
+  <section id="work">
+
+    <h2 class="title">Selected Work</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <h3>Project One</h3>
+        <p>Creative Project</p>
+      </div>
+
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>Brand & Design</p>
+      </div>
+
+      <div class="project">
+        <h3>Project Three</h3>
+        <p>Video & Motion</p>
+      </div>
+
+      <div class="project">
+        <h3>Project Four</h3>
+        <p>Digital Experience</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="services">
+
+    <h2 class="title">Services</h2>
+
+    <div class="services">
+
+      <div class="service">
+        <h3>Video Editing</h3>
+        <p>Short-form videos, reels and creative edits.</p>
+      </div>
+
+      <div class="service">
+        <h3>Graphic Design</h3>
+        <p>Visual designs and branding for businesses.</p>
+      </div>
+
+      <div class="service">
+        <h3>Motion Graphics</h3>
+        <p>Engaging motion and animation for digital content.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div class="contact" id="contact">
+
+    <h2>Have a project in mind?</h2>
+
+    <p>
+      Let's work together and bring your idea to life.
+    </p>
+
+    <a href="mailto:hello@varuk.in" class="btn">
+      Get in touch →
+    </a>
+
+  </div>
+
+
+  <footer>
+    © 2026 VARUK. All rights reserved.
+  </footer>
+
+</body>
+</html>
